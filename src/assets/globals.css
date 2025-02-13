@@ -71,6 +71,8 @@ button:hover{
 #green input{color: var(--primary-light);}
 #green .border {border-color: var(--primary-dark) ;}
 
+
+
 #light .button{
     background-color: var(--third-green);
     color: white;
@@ -119,6 +121,69 @@ button:hover{
 
 /* ui styles */
 
+
+/* ************************************************************* */
+/* toggle switch */
+.component-title {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 30px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #888;
+    text-align: center;
+  }
+
+  .container {
+    width: 51px;
+    height: 31px;
+    position: relative;
+  }
+
+
+  .checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+
+  .switch {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #e9e9eb;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+  }
+
+  .slider {
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    left: calc(50% - 27px/2 - 10px);
+    top: calc(50% - 27px/2);
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+  }
+
+  .checkbox:checked + .switch {
+    background-color: #34C759;
+  }
+
+  .checkbox:checked + .switch .slider {
+    left: calc(50% - 27px/2 + 10px);
+    top: calc(50% - 27px/2);
+  }
+/* ************************************************************* */
 /* login */
 
 .auth-section{
@@ -233,6 +298,11 @@ button:hover{
     width: 100%;
 }
 
+.dashboard-content{
+    width: 100%;
+    position: relative;
+}
+
 .dash-header{
     width: 100%;
     display: flex;
@@ -332,13 +402,15 @@ button:hover{
     align-items: center;
     justify-content: space-between;
     padding-right: 100px;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .admin-header-btns{
     display: flex;
     gap: 12px;
 }
-.admin-header-btns button{
+.admin-table-header button{
     width: fit-content;
     font-weight: 500;
     border-radius: 10px;
@@ -346,3 +418,38 @@ button:hover{
     border: none;
 }
 
+.table-container{
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.table{
+    width: 92.5%;
+    border-radius: 20px;
+    padding-top: 10px;
+    position: relative;
+    min-height: calc(100vh - 330px);
+    padding-right: 100px !important;
+}
+.table-container table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 20px;
+    font-size: .7rem;
+    text-align: center;
+}
+
+.table-container table thead tr th{
+    font-weight: 500;
+    
+} 
+
+.table-container table thead tr{
+    border-bottom-width:  2px;
+    border-bottom-style: solid ;
+    width: 100%;
+}

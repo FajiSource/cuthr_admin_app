@@ -52,7 +52,7 @@ export default function DashBoard() {
                 </div>
             </div>
 
-            <div>
+            <div className="dashboard-content">
                 <div className="admin-table-header">
                     <div className="admin-header-btns">
                         <button className="button">ALL</button>
@@ -63,6 +63,85 @@ export default function DashBoard() {
                         <button className="button">ABM</button>
                     </div>
                     <button className="button">ADD ATTENDANCE</button>
+                </div>
+
+
+                <div className="table-container ">
+                    <div className="table button">
+                        <table>
+                            <thead>
+                                <tr className="border"> 
+                                    <th>
+                                        FIRST NAME
+                                    </th>
+                                    <th>
+                                        LAST NAME
+                                    </th>
+                                    <th>
+                                        EMAIL
+                                    </th>
+                                    <th>
+                                        GENDER
+                                    </th>
+                                    <th>
+                                        CONTACT
+                                    </th>
+                                    <th>
+                                        EMERGENCY NO.
+                                    </th>
+                                    <th>
+                                        SCHOOL ID
+                                    </th>
+                                    <th>
+                                        TRANSACTION NO.
+                                    </th>
+                                    <th>
+                                        VERIFIED
+                                    </th>
+                                    <th>
+                                        ACTION
+                                    </th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+                                <tr className="border">
+                                    <td>
+                                        Xavier
+                                    </td>
+                                    <td>
+                                        Funetes
+                                    </td>
+                                    <td>
+                                        xavier@gmail.com
+                                    </td>
+                                    <td>
+                                        Male
+                                    </td>
+                                    <td>
+                                        STEM
+                                    </td>
+                                    <td>
+                                        09817343434
+                                    </td>
+                                    <td>
+                                        19-0344-23
+                                    </td>
+                                    <td>
+                                        091483194
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+                                        Xavier
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>

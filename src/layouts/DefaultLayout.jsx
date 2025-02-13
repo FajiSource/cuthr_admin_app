@@ -19,7 +19,7 @@ export default function DefaultLayout() {
                                 <Logo />
                             </div>
 
-                            <div  className="nav-links">
+                            <div className="nav-links">
                                 <a href="" className="text">Dashboard</a>
                                 <a href="" className="text">Add New Event</a>
                                 <a href="" className="text">User and Roles</a>
