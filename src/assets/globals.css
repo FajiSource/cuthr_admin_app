@@ -46,24 +46,46 @@ a{
 a:hover{
     font-weight: 700;
 }
-
+button:hover{
+    opacity: .8;
+}
 /* theme */
 #light{background-color: var(--primary-light);}
 #light .logo{color: var(--primary-green);}
 #light .text{color: var( --third-green) ;}
 #light .bg{background-color: var(--primary-green);}
-#light .secondary-bg{background-color: var(--third-green);}
+#light .secondary-bg {background-color: var(--third-green);}
+#light .border {border-color: var(--third-green) ;}
+
 
 #dark .bg{background-color: var(--secondary-green) ;}
 #dark{background-color: var(--primary-dark);}
 #dark .logo{color: var(--secondary-green);}
 #dark .text{color: var(--secondary-green) ;}
+#dark .border {border-color: var(--secondary-green) ;}
 
 #green .logo{color: var(--primary-dark);}
 #green .text{color: var(--primary-dark) ;}
 #green{background-color: var(--primary-green);}
 #green .bg{background-color: var(--primary-dark);}
 #green input{color: var(--primary-light);}
+#green .border {border-color: var(--primary-dark) ;}
+
+#light .button{
+    background-color: var(--third-green);
+    color: white;
+}
+
+#dark .button{
+    background-color: var(--third-green);
+    color: black;
+}
+
+#green .button{
+    background-color: var(--primary-dark);
+    color: var(--third-green);
+}
+
 
 /* logo */
 
@@ -95,6 +117,7 @@ a:hover{
     position: absolute;
 }
 
+/* ui styles */
 
 /* login */
 
@@ -214,7 +237,7 @@ a:hover{
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 80px;
+    gap: 20px;
     justify-content: space-between;
 }
 
@@ -225,7 +248,8 @@ a:hover{
 .dash-totals{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: left;
+    gap: 100px;
     flex-direction: row;
 }
 
@@ -270,7 +294,9 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: left;
-    gap: 5px;
+    gap: 0px;
+    flex: 1;
+    position: relative;
 }
 .status{
     display: flex;
@@ -282,11 +308,41 @@ a:hover{
     font-weight: 800;
 
 }
+
 .status-bar{
     flex: 1;
     position: relative;
+
     border-radius: 10px;
 }
-.status-bar div{
+.status-bar span{
     border-radius: 10px;
+    width: 100px;
+    display: block;
+    height: 6px;
+
 }
+.status-label{
+    font-size: 10px;
+}
+
+.admin-table-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+
+.admin-header-btns{
+    display: flex;
+    gap: 12px;
+}
+.admin-header-btns button{
+    width: fit-content;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 5px 15px;
+    border: none;
+}
+

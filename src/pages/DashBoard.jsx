@@ -21,39 +21,49 @@ export default function DashBoard() {
                 </div>
 
                 <div className="admin-status text">
-                    <div className="statuc-container">
+                    <div className="status-container">
                         <div className="status">
                             <span>STEM</span>
                             <span>345</span>
-                            <div className="status-bar"><div></div></div>
+                            <div className="status-bar"><span className="secondary-bg"  ></span></div>
                         </div>
                         <div className="status">
-                            <span>STEM</span>
+                            <span>ICT</span>
                             <span>345</span>
-                            <div className="status-bar"><div></div></div>
+                            <div className="status-bar"><span className="secondary-bg" style={{ width: "80%" }}></span></div>
                         </div>
                         <div className="status">
-                            <span>STEM</span>
+                            <span>HUMSS</span>
                             <span>345</span>
-                            <div className="status-bar"><div></div></div>
+                            <div className="status-bar"><span className="secondary-bg" style={{ width: "60%" }}></span></div>
                         </div>
                         <div className="status">
-                            <span>STEM</span>
+                            <span>AMB</span>
                             <span>345</span>
-                            <div className="status-bar"><div></div></div>
+                            <div className="status-bar"><span className="secondary-bg" style={{ width: "30%" }}></span></div>
                         </div>
                         <div className="status">
-                            <span>STEM</span>
+                            <span>TVL</span>
                             <span>345</span>
-                            <div className="status-bar"><div className="secondary-bg" style={{width:"50%"}}></div></div>
+                            <div className="status-bar"><span className="secondary-bg" style={{ width: "10%" }}></span></div>
                         </div>
                     </div>
-                    <span>Stand Distribution</span>
+                    <span className="status-label">Stand Distribution</span>
                 </div>
             </div>
 
             <div>
-
+                <div className="admin-table-header">
+                    <div className="admin-header-btns">
+                        <button className="button">ALL</button>
+                        <button className="button">FACULTY</button>
+                        <button className="button">STEM</button>
+                        <button className="button">HUMSS</button>
+                        <button className="button">ICT</button>
+                        <button className="button">ABM</button>
+                    </div>
+                    <button className="button">ADD ATTENDANCE</button>
+                </div>
             </div>
         </section>
     )
