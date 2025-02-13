@@ -442,9 +442,27 @@ button:hover{
     border-bottom-width:  2px;
     border-bottom-style: solid ;
     width: 100%;
+    border-color: white;
 }
 
 
+.toggle-col{
+    display: flex;
+    justify-content: center;
+}
+.action-btns{
+    width: 100%;
+    border-color: white;
+    color: white;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.action-btns button{
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 100%;
+}
 
 /* update user */
 .update-user-page{
@@ -544,5 +562,5 @@ button:hover{
     border: none;
     background-color: transparent;
     font-weight: 800;
-    
+
 }

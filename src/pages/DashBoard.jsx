@@ -1,3 +1,8 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Toggle from "../components/ui/Toggle";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons/faArrowUp";
+
 export default function DashBoard() {
     return (
         <section className="text dashboard-section">
@@ -131,11 +136,14 @@ export default function DashBoard() {
                                     <td>
                                         091483194
                                     </td>
-                                    <td>
-
+                                    <td className="toggle-col">
+                                        <Toggle/>
                                     </td>
                                     <td>
-                                        Xavier
+                                        <div className="action-btns">
+                                            <button className="secondary-bg "><FontAwesomeIcon icon={faXmark}/></button>
+                                            <button className="secondary-bg "><FontAwesomeIcon icon={faArrowUp}/></button>
+                                        </div>
                                     </td>
 
                                 </tr>
