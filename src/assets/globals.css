@@ -52,6 +52,7 @@ a:hover{
 #light .logo{color: var(--primary-green);}
 #light .text{color: var( --third-green) ;}
 #light .bg{background-color: var(--primary-green);}
+#light .secondary-bg{background-color: var(--third-green);}
 
 #dark .bg{background-color: var(--secondary-green) ;}
 #dark{background-color: var(--primary-dark);}
@@ -256,4 +257,36 @@ a:hover{
 .dash-total span:nth-child(2){
     margin-top: -25px;
     font-weight: 800;   
+}
+
+.admin-status{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: relative;
+}
+
+.status-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 5px;
+}
+.status{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.status span{
+    font-weight: 800;
+
+}
+.status-bar{
+    flex: 1;
+    position: relative;
+    border-radius: 10px;
+}
+.status-bar div{
+    border-radius: 10px;
 }
