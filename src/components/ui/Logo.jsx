@@ -7,7 +7,7 @@ export default function Logo() {
     return (
         <div className="logo">
             <h1 className="text">CUTHR</h1>
-            <strong>+</strong>
+            <strong className="text">+</strong>
         </div>
     )
 }

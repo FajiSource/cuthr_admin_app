@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Toggle from "../components/ui/Toggle";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons/faArrowUp";
 
 export default function DashBoard() {
@@ -60,14 +60,14 @@ export default function DashBoard() {
             <div className="dashboard-content">
                 <div className="admin-table-header">
                     <div className="admin-header-btns">
-                        <button className="button">ALL</button>
-                        <button className="button">FACULTY</button>
-                        <button className="button">STEM</button>
-                        <button className="button">HUMSS</button>
-                        <button className="button">ICT</button>
-                        <button className="button">ABM</button>
+                        <button className="button hidden">ALL</button>
+                        <button className="button hidden">FACULTY</button>
+                        <button className="button ">STEM</button>
+                        <button className="button hidden">HUMSS</button>
+                        <button className="button hidden">ICT</button>
+                        <button className="button hidden">ABM</button>
                     </div>
-                    <button className="button">ADD ATTENDANCE</button>
+                    <button className="button add-dash-btn"><span>ADD ATTENDANCE</span> <span><FontAwesomeIcon icon={faPlus}/></span></button>
                 </div>
 
 
@@ -75,7 +75,7 @@ export default function DashBoard() {
                     <div className="table button">
                         <table>
                             <thead>
-                                <tr className="border"> 
+                                <tr className="border-self"> 
                                     <th>
                                         FIRST NAME
                                     </th>
@@ -111,7 +111,7 @@ export default function DashBoard() {
                             </thead>
 
                             <tbody>
-                                <tr className="border">
+                                <tr className="border-self">
                                     <td>
                                         Xavier
                                     </td>
