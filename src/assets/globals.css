@@ -825,3 +825,39 @@ button:hover {
     font-weight: 800;
 
 }
+
+
+@media (max-width:1049px) {
+    .form-group {
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        align-items: center;
+    }
+
+.form-row{
+    text-align: center;
+    width: fit-content;
+}
+.update-user-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+    gap: 10px;
+}
+.update-header-col h1 {
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+.form-btns {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+}
+}
